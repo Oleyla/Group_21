@@ -1,0 +1,39 @@
+1. Посмотреть, где я -  pwd
+2. Создать папку - mkdir Volha
+3. Зайти в папку - cd Volha
+4. Создать 3 папки - mkdir Volha1 Volha2 Volha3
+5. Зайти в папку - cd Volha1
+6. Создать 5 файлов - touch test1.txt test2.txt test3.txt test4.json test5.json
+7. Создать 3 папки - mkdir Volha4 Volha5 Volha6
+8. Посмотреть список содержимого папки - ls -l
+9. Открыть текстовый файл - nano test1.txt
+10. Добавить текст в файл - Hello,World
+11. Сохранить и выйти - Ctrl+O , Ctrl+X
+12. Выйти на уровень выше - cd -
+13. Перемещение -cd Volha1,  mv -f test1.txt Volha4 , mv -f test2.txt Volha4
+14. Копирование - cp test3.txt Volha4 , cp test5.json Volha4
+15. Поиск по имени - find -name test1
+16. Показать содержимое - ls|grep test3
+17. Показать первые 10 строк - head test1.txt
+18. Показать последние 10 строк - tail test1.txt
+19. Просмотр с прокруткой -  less test1.txt
+20. вывести дату и время - date
+
+curl https://api.quarantine.country/api/v1/regions
+
+Скрипт.
+Создать файл - touch myscript.txt
+nano myscript.txt
+#!/bin/bash
+cd Volha;
+mkdir Volha 1 Volha2 Volha3
+cd Volha1
+touch test1.txt test2.txt test3.txt test4.json test5.json;
+mkdir Volha4 Volha5 Volha6
+ls -l
+mv test2.txt/Volha4
+mv test3.txt/Volha4
+Ctrl+O Ent Ctrl+x
+chmod +x /.myscript.txt
+./myscript.txt
+
